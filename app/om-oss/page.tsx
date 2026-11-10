@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo";
 import { asset, people, site } from "@/lib/site";
 
 export const metadata = buildMetadata({
-  title: "Om oss",
+  title: "Om oss – Linus & Hampus",
   description:
     "LHLS AB drivs av Linus Sjödén och Hampus Lagerberg i Älvdalen – lokala grävmaskinister och entreprenörer som brinner för det de gör.",
   path: "/om-oss/",

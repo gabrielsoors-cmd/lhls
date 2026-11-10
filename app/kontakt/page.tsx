@@ -4,9 +4,9 @@ import { buildMetadata } from "@/lib/seo";
 import { asset, mailtoProject, mailtoTo, people, site } from "@/lib/site";
 
 export const metadata = buildMetadata({
-  title: "Kontakta oss",
+  title: "Kontakta oss – begär prisestimat",
   description:
-    "Kontakta LHLS AB i Älvdalen. Ring Linus (projekt och personal) på 079-358 54 55 eller Hampus (ekonomi och fakturor) på 070-381 52 51. Vi återkommer snabbt med ett prisestimat.",
+    "Kontakta LHLS AB i Älvdalen. Ring Linus (projekt) på 079-358 54 55 eller Hampus (ekonomi) på 070-381 52 51 – vi återkommer snabbt med prisestimat.",
   path: "/kontakt/",
 });
 

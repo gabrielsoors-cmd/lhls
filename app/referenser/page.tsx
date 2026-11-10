@@ -2,7 +2,7 @@ import { ContactBand, PageHeader, Pic } from "@/components/Sections";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Referenser – större uppdrag",
+  title: "Referenser – större markuppdrag",
   description:
     "Ett urval av våra referensuppdrag: 7 km snökanonledning, stumsvetsning av 355 mm PE-rör på dambygge i Tandådalen och älvrestaurering i Älvdalen.",
   path: "/referenser/",

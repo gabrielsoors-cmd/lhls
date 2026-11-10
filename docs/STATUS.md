@@ -27,3 +27,10 @@ Start (hero + val + maskinförare-sektion) · Entreprenad (bildspel + 6 tjänste
 - GitHub Pages saknar bildoptimering → `scripts/optimize-images.mjs` + `lib/image-loader.ts` (synka bredder i båda + `next.config.ts`).
 - `NEXT_PUBLIC_*`-variabler som är tomma strängar: använd `||`, inte `??`.
 - Originalbilder ligger i `assets/` (ej `public/`); varianter genereras till `public/img/` vid bygge (git-ignorerat).
+
+## Uppdatering (nov 2026)
+- Favicon = fyrkantig logga på vit botten (app/icon.png, apple-icon.png, favicon.ico).
+- Google-omdömeslänk uppdaterad (lib/site.ts).
+- Mobil: hero och Entreprenad-header växer med innehållet (min-h-svh) i stället för att klippas.
+- Delningsbild: statisk public/og.jpg används av alla sidor via buildMetadata; 404 är noindex.
+- Unika titlar och beskrivningar per sida.

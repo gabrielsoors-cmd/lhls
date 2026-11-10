@@ -6,9 +6,9 @@ import { services } from "@/content/services";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Entreprenad & markarbeten i Älvdalen",
+  title: "Entreprenad & Markarbeten i Älvdalen",
   description:
-    "Finplanering, husgrunder, el och belysning, dränering, vägbyggnation samt vatten och avlopp i Älvdalen och norra Dalarna. Lokal grävmaskinist och entreprenör.",
+    "Lokal grävmaskinist i Älvdalen: finplanering, husgrunder, el och belysning, dränering, vägbyggnation samt VA. Stora som små uppdrag i norra Dalarna.",
   path: "/entreprenad/",
 });
 
@@ -17,17 +17,17 @@ export default function Entreprenad() {
     <>
       <section
         aria-labelledby="entreprenad-rubrik"
-        className="relative h-[72svh] min-h-[460px] overflow-hidden bg-ink text-paper"
+        className="relative flex min-h-[72svh] flex-col overflow-hidden bg-ink text-paper"
       >
         <HeroSlideshow slides={entreprenadSlides} />
         <div className="absolute inset-0 z-20 bg-black/35" />
         <div className="absolute inset-x-0 bottom-0 z-20 h-2/3 bg-linear-to-t from-black/75 to-transparent" />
-        <div className="wrap relative z-30 flex h-full flex-col justify-end pb-10 md:pb-16">
+        <div className="wrap relative z-30 flex flex-1 flex-col justify-end pb-10 pt-28 md:pb-16">
           <p className="eyebrow text-paper/80">Verksamhetsområde 01</p>
-          <h1 id="entreprenad-rubrik" className="display mt-5 max-w-4xl text-4xl sm:text-6xl md:text-7xl">
+          <h1 id="entreprenad-rubrik" className="display mt-4 max-w-4xl text-[2rem] leading-[1.08] sm:text-6xl md:mt-5 md:text-7xl">
             Entreprenad &amp; markarbeten
           </h1>
-          <p className="mt-6 max-w-xl text-base text-paper/85 md:text-lg">
+          <p className="mt-4 max-w-xl text-base text-paper/85 md:text-lg">
             Lokal grävmaskinist och entreprenör i Älvdalen. Inget jobb är för stort eller för litet.
           </p>
         </div>

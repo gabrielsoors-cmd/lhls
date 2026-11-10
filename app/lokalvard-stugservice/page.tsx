@@ -2,9 +2,9 @@ import { ContactBand, PageHeader } from "@/components/Sections";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Lokalvård & Stugservice i Idre, Särna och Älvdalen",
+  title: "Lokalvård & Stugservice i Idre, Särna, Älvdalen",
   description:
-    "Företagsstädning, byggstädning, flyttstädning, storstädning, avresestädning och fönsterputs i Idre, Särna och Älvdalen. För företag och privatpersoner.",
+    "Städning och stugservice i Idre, Särna och Älvdalen: företags-, bygg-, flytt-, stor- och avresestädning samt fönsterputs för företag och privatpersoner.",
   path: "/lokalvard-stugservice/",
 });
 

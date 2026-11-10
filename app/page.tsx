@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
   title: "Entreprenad & Markarbete i Älvdalen | Lokal Grävmaskinist",
   absoluteTitle: true,
   description:
-    "LHLS AB är ett lokalt entreprenadföretag och grävmaskinist i Älvdalen. Markarbete, dränering, schaktning, husgrunder, VA och finplanering i norra Dalarna. Inget jobb är för stort eller för litet.",
+    "Lokal grävmaskinist och entreprenör i Älvdalen. Markarbete, dränering, schaktning, husgrunder, VA och finplanering i norra Dalarna.",
   path: "/",
 });
 

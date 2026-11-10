@@ -10,6 +10,13 @@ type Input = {
   path: string;
 };
 
+const ogImage = {
+  url: `${site.url}/og.jpg`,
+  width: 1200,
+  height: 630,
+  alt: "LHLS AB – Entreprenad i Älvdalen",
+};
+
 /**
  * Alla sidors metadata går genom den här funktionen så att
  * titel-formel, canonical och delningsdata hanteras på ett ställe.
@@ -29,8 +36,9 @@ export function buildMetadata({ title, absoluteTitle, description, path }: Input
       siteName: site.name,
       locale: "sv_SE",
       type: "website",
+      images: [ogImage],
     },
-    twitter: { card: "summary_large_image", title, description },
+    twitter: { card: "summary_large_image", title, description, images: [ogImage.url] },
   };
 }
 

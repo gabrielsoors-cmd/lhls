@@ -4,9 +4,9 @@ import { interleaved } from "@/lib/gallery";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Projekt – bilder från våra jobb",
+  title: "Projekt – bilder från markarbeten",
   description:
-    "Bilder från tidigare projekt: grunder, vatten och avlopp, finplanering, el, väg och markarbete i Älvdalen och norra Dalarna.",
+    "Se bilder från våra markarbeten i Älvdalen och norra Dalarna: husgrunder, vatten och avlopp, finplanering, el, dränering och vägbyggnation.",
   path: "/projekt/",
 });
 

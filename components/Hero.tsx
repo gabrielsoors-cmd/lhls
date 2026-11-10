@@ -23,27 +23,27 @@ export function Hero() {
   return (
     <section
       aria-labelledby="hero-rubrik"
-      className="relative flex min-h-[640px] h-svh flex-col overflow-hidden bg-ink text-paper"
+      className="relative flex min-h-svh flex-col overflow-hidden bg-ink text-paper"
     >
       <HeroSlideshow slides={heroSlides} />
       {/* Mörkt skikt för läsbarhet över bilderna. */}
       <div className="absolute inset-0 z-20 bg-black/40" />
       <div className="absolute inset-x-0 bottom-0 z-20 h-2/3 bg-linear-to-t from-black/75 to-transparent" />
 
-      <div className="wrap relative z-30 flex flex-1 flex-col justify-end pb-10 pt-28 md:pb-14">
+      <div className="wrap relative z-30 flex flex-1 flex-col justify-end pb-8 pt-24 md:pb-14 md:pt-28">
         <div className="rise max-w-3xl">
-          <Logo tone="light" className="h-auto w-56 sm:w-72 md:w-96" />
-          <div className="mt-5 flex items-center gap-4">
+          <Logo tone="light" className="h-auto w-44 sm:w-72 md:w-96" />
+          <div className="mt-4 flex items-center gap-3 md:mt-5 md:gap-4">
             <span className="h-px w-12 bg-paper" />
             <span className="eyebrow">{site.address.locality} · {site.region}</span>
           </div>
           <h1
             id="hero-rubrik"
-            className="display mt-8 text-[2.1rem] sm:text-5xl md:text-6xl"
+            className="display mt-5 text-[1.9rem] leading-[1.08] sm:text-5xl md:mt-8 md:text-6xl"
           >
             {site.tagline}
           </h1>
-          <p className="mt-5 max-w-md text-base text-paper/80 md:text-lg">
+          <p className="mt-4 max-w-md text-[0.95rem] leading-relaxed text-paper/80 md:mt-5 md:text-lg">
             Lokal grävmaskinist och entreprenör i Älvdalen. Vi utför allt inom markarbete,
             dränering, schaktning och grävning i norra Dalarna.
           </p>
@@ -52,22 +52,22 @@ export function Hero() {
 
       <div className="relative z-30">
         <div className="wrap">
-          <p className="eyebrow pb-3 text-paper/70">Vad behöver du hjälp med?</p>
+          <p className="eyebrow pb-2.5 text-paper/70">Vad behöver du hjälp med?</p>
         </div>
         <div className="grid border-t border-paper/35 md:grid-cols-2">
           {choices.map((c, i) => (
             <Link
               key={c.href}
               href={c.href}
-              className={`group flex items-center justify-between gap-6 px-5 py-6 transition-colors duration-300 hover:bg-paper hover:text-ink md:px-10 md:py-8 ${
+              className={`group flex items-center justify-between gap-6 px-5 py-4 transition-colors duration-300 hover:bg-paper hover:text-ink sm:py-6 md:px-10 md:py-8 ${
                 i === 0 ? "border-b border-paper/35 md:border-b-0 md:border-r" : ""
               }`}
             >
               <span className="flex items-baseline gap-5">
                 <span className="eyebrow opacity-60">{c.n}</span>
                 <span>
-                  <span className="display block text-xl sm:text-2xl md:text-3xl">{c.title}</span>
-                  <span className="mt-1.5 block text-sm opacity-70">{c.text}</span>
+                  <span className="display block text-lg leading-tight sm:text-2xl md:text-3xl">{c.title}</span>
+                  <span className="mt-1 block text-[0.8rem] leading-snug opacity-70 sm:text-sm">{c.text}</span>
                 </span>
               </span>
               <span

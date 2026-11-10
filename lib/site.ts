@@ -35,7 +35,7 @@ export const site = {
   },
   region: "Norra Dalarna",
   /** Länk till företagets Google-profil (för "Se alla omdömen"). Fylls i när den finns. */
-  googleProfileUrl: "https://share.google/roFvWDmP6kHzw6yhW",
+  googleProfileUrl: "https://www.google.com/search?sca_esv=f6888a27e4d63945&sxsrf=AKL5yDjMxm9D7f1C7IGRS25wvcJiXiuy3w:1794335316909&q=lhls&si=AE1YtOqiKPb2pdLXAi8quZ9vbH4aVq_aX8-3H9iFBLpRNK95c2YHbh8G9YfNNDM_e9eGbVTefFT1_Yx4C8zE6riZAOyC3MAFg3omfzdZsIfRBTFz52UXLMA%3D&uds=AE2AFgbdUIomBHReBXf94JbCmZ2SBEa1YmqlrGpuUBQH2NdoIX8zVQ8xjLwf2RlKCU6TXz19aACyN_D_PAB43IaNR6-I1HjDzRSaSm-hjRU084aEeI6cuiE&sa=X&ved=2ahUKEwiihbD5g_6XAxXcKhAIHSWrOesQ3PALegQILBAF&biw=1440&bih=812&dpr=2#sv=CAESzQEKuQEStgEKd0FERGJXZWE3Y1ExdEdWb3NjQ3EwUTVxWnpaQ1djbHdsbjJrQUs0SzA5WC1MVDJSLW11Q1pEVHgxQU5vSTlRTXFmOFdkd1hUZjItOVppQWJFU2d6SFdEYzdvMnQxUHFTVWhFaUpiOGpRT0RySWhzOGtxaHF2bHhZEhdlR0x6YXJqWU9ycTR3UEFQd3VqemdBcxoiQUhOMEU3SEVnVTJla2thb0IwREROV25rRXRBMkF3UzllURIEODA1MRoBMyoAMAA4AUAAGAAg_a_fugpKAhAB",
 } as const;
 
 export type Person = {
