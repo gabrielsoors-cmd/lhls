@@ -4,7 +4,7 @@
 **Design:** strikt svartvitt UI, Archivo (rubriker) + Inter (brödtext), självhostade. Logotyp: `public/logo-*.svg`.
 
 ## Sidor
-Start (hero + val) · Mark & anläggning · Lokalvård & Stugservice · Referenser (galleri) · Om oss · Kontakt · 404 · omdirigeringssidor för gamla URL:er.
+Start (hero + val + maskinförare-sektion) · Entreprenad (bildspel + 6 tjänster) · Lokalvård & Stugservice (6 tjänster) · Projekt (bildgalleri) · Referenser (större uppdrag) · Om oss · Kontakt · Allmänna villkor · Integritetspolicy · 404 · omdirigeringssidor för gamla URL:er.
 
 ## Driftlägen (styrs av repo-variabeln `SITE_URL`)
 - Ej satt → förhandsvisning `https://gabrielsoors-cmd.github.io/lhls/`, `noindex`, robots disallow.
@@ -16,8 +16,12 @@ Start (hero + val) · Mark & anläggning · Lokalvård & Stugservice · Referens
 3. Google-omdömen: skapa API-nyckel + `GOOGLE_PLACE_ID` (se README).
 4. Search Console: verifiera via DNS (Domain-egenskap) eller `GOOGLE_SITE_VERIFICATION`; skicka in `/sitemap.xml`.
 5. DNS-flytt + `SITE_URL` + custom domain i Pages (se README).
-6. Linus/Hampus granskar texter (särskilt: 7 km snökanonledning, PE-svetsning, 10 års garanti, Lokalvård/Stugservice-copy).
-7. Villkor/integritetspolicy: texter saknas (gamla sidan hade dem).
+6. Linus/Hampus granskar texter (särskilt: "355 mm" PE-rör i Tandådalen, snökanonledning 7 km, Om oss-texten).
+7. Allmänna villkor och integritetspolicy är utkast: låt jurist/branschorganisation granska. Uppdatera policyn om analys/formulär tillkommer.
+8. Kontrollera att linus@lhls.se och hampus@lhls.se finns som brevlådor.
+9. Porträtt av Linus/Hampus: lägg filer i `public/people/` och sätt `photo` i `lib/site.ts`.
+10. Bilder till Lokalvård & Stugservice saknas ännu.
+11. SEO: startsidans titel är identisk med gamla sidans ("… | Lokal Grävmaskinist") för att behålla ranking.
 
 ## Kända fallgropar
 - GitHub Pages saknar bildoptimering → `scripts/optimize-images.mjs` + `lib/image-loader.ts` (synka bredder i båda + `next.config.ts`).

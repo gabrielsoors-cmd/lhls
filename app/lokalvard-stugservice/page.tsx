@@ -2,27 +2,19 @@ import { ContactBand, PageHeader } from "@/components/Sections";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Lokalvård & Stugservice i Älvdalen",
+  title: "Lokalvård & Stugservice i Idre, Särna och Älvdalen",
   description:
-    "Lokalvård och stugservice i Älvdalen med omnejd från LHLS AB. Tillsyn, städning och praktisk hjälp – beskriv ditt behov så återkommer vi med ett förslag.",
+    "Företagsstädning, byggstädning, flyttstädning, storstädning, avresestädning och fönsterputs i Idre, Särna och Älvdalen. För företag och privatpersoner.",
   path: "/lokalvard-stugservice/",
 });
 
-const areas = [
-  {
-    title: "Lokalvård",
-    text: "Städning av lokaler, verkstäder och gemensamma utrymmen – regelbundet eller vid enstaka tillfällen.",
-  },
-  {
-    title: "Stugservice",
-    text: "Tillsyn och praktisk hjälp för fritidshus och stugor, så att allt är i ordning när du kommer.",
-  },
-];
-
-const steps = [
-  "Du berättar vad du behöver hjälp med och var.",
-  "Vi återkommer med ett förslag och ett pris.",
-  "Vi utför arbetet, när det passar dig.",
+const services = [
+  { title: "Företagsstädning", text: "Vi hjälper dig med städning av era lokaler efter era önskemål." },
+  { title: "Byggstädning", text: "Vi utför byggstädning på både stora och små byggnader." },
+  { title: "Flyttstädning", text: "Vi ser till att bostaden är nystädad och fräsch inför utflytt." },
+  { title: "Storstädning", text: "Vi utför en djupare städning av ditt boende." },
+  { title: "Avresestädning", text: "Vi ser till att boendet är nystädat och fräscht tills nästa gäster kommer." },
+  { title: "Fönsterputs", text: "Vi löser så att dina fönster är rentvättade och fina." },
 ];
 
 export default function LokalvardStugservice() {
@@ -31,32 +23,22 @@ export default function LokalvardStugservice() {
       <PageHeader
         eyebrow="Verksamhetsområde 02"
         title="Lokalvård & Stugservice"
-        lead="Vid sidan av markarbetet hjälper vi till med lokalvård och stugservice i Älvdalen med omnejd."
+        lead="Vi är stationerade i Idre, Särna och Älvdalen och hjälper dig som företag och privatperson med det mesta."
       />
 
       <section className="wrap py-16 md:py-24">
-        <ul className="grid gap-px bg-line md:grid-cols-2">
-          {areas.map((a) => (
-            <li key={a.title} className="bg-paper py-8 md:p-10 md:first:pl-0 md:last:pr-0">
-              <h2 className="display text-3xl md:text-4xl">{a.title}</h2>
-              <p className="mt-5 max-w-md text-lg leading-relaxed text-steel">{a.text}</p>
+        <ol className="border-t border-ink">
+          {services.map((s, i) => (
+            <li
+              key={s.title}
+              className="grid grid-cols-[2.5rem_1fr] gap-x-4 gap-y-2 border-b border-line py-7 md:grid-cols-[4rem_1fr_1fr] md:items-baseline md:gap-x-8 md:py-9"
+            >
+              <span className="eyebrow text-steel">{String(i + 1).padStart(2, "0")}</span>
+              <h2 className="display text-2xl md:text-4xl">{s.title}</h2>
+              <p className="col-start-2 text-steel md:col-start-3">{s.text}</p>
             </li>
           ))}
-        </ul>
-      </section>
-
-      <section className="border-t border-line bg-mist">
-        <div className="wrap py-16 md:py-24">
-          <h2 className="display text-3xl md:text-5xl">Så fungerar det</h2>
-          <ol className="mt-12 grid gap-10 md:grid-cols-3">
-            {steps.map((s, i) => (
-              <li key={s} className="border-t border-ink pt-6">
-                <span className="eyebrow text-steel">{String(i + 1).padStart(2, "0")}</span>
-                <p className="mt-4 text-lg leading-relaxed">{s}</p>
-              </li>
-            ))}
-          </ol>
-        </div>
+        </ol>
       </section>
 
       <ContactBand heading="Berätta vad du behöver hjälp med." />

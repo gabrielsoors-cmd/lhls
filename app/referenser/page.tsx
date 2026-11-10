@@ -1,23 +1,28 @@
-import { Gallery } from "@/components/Gallery";
-import { ContactBand, PageHeader } from "@/components/Sections";
-import { interleaved } from "@/lib/gallery";
+import { ContactBand, PageHeader, Pic } from "@/components/Sections";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Referenser – bilder från våra jobb",
+  title: "Referenser – större uppdrag",
   description:
-    "Bilder från tidigare uppdrag: grunder, vatten och avlopp, finplanering, el, väg och markarbete i Älvdalen och norra Dalarna.",
-  path: "/referenser",
+    "Ett urval av våra referensuppdrag: 7 km snökanonledning, stumsvetsning av 355 mm PE-rör på dambygge i Tandådalen och älvrestaurering i Älvdalen.",
+  path: "/referenser/",
 });
 
-const projects = [
+const references = [
+  {
+    title: "Snökanonledning, 7 km",
+    text: "Sju kilometer ledningsgrav i skogsterräng, med rör, kablar och kopplingar.",
+    images: ["/images/va-4757.jpg", "/images/va-4756.jpg", "/images/va-4759.jpg"],
+  },
+  {
+    title: "Stumsvetsning av 355 mm PE-rör",
+    text: "Stumsvetsning av PE-rör med dimension 355 mm på dambygge i Tandådalen.",
+    images: ["/images/va-4788.jpg", "/images/va-4787.jpg"],
+  },
   {
     title: "Älvrestaurering i Älvdalen",
     text: "I samarbete med Länsstyrelsen fick vi möjlighet att restaurera älven i Älvdalen. Ett mycket intressant projekt där resultatet talar för sig själv.",
-  },
-  {
-    title: "Snökanonledning, 7 km",
-    text: "Långa ledningsgravar med rör och kablar genom skogsterräng, inklusive stumsvetsning av PE-rör på plats.",
+    images: [],
   },
 ];
 
@@ -26,21 +31,35 @@ export default function Referenser() {
     <>
       <PageHeader
         eyebrow="Referenser"
-        title="Bilder från våra jobb"
-        lead="Ett urval från tidigare uppdrag, tagna ute på arbetsplatserna."
+        title="Större uppdrag"
+        lead="Ett urval av uppdrag vi är extra stolta över."
       />
 
-      <section className="wrap grid gap-10 border-b border-line py-14 md:grid-cols-2 md:gap-16 md:py-20">
-        {projects.map((p) => (
-          <article key={p.title} className="border-t border-ink pt-6">
-            <h2 className="display text-2xl md:text-3xl">{p.title}</h2>
-            <p className="mt-4 max-w-md leading-relaxed text-steel">{p.text}</p>
+      <section className="wrap">
+        {references.map((r, i) => (
+          <article
+            key={r.title}
+            className="grid gap-8 border-b border-line py-14 md:grid-cols-12 md:gap-12 md:py-20"
+          >
+            <div className="md:col-span-5">
+              <p className="eyebrow text-steel">{String(i + 1).padStart(2, "0")}</p>
+              <h2 className="display mt-5 text-3xl md:text-5xl">{r.title}</h2>
+              <p className="mt-6 max-w-md text-lg leading-relaxed text-steel">{r.text}</p>
+            </div>
+            {r.images.length > 0 && (
+              <div className="grid grid-cols-2 gap-3 md:col-span-7 md:gap-4">
+                {r.images.map((src, j) => (
+                  <Pic
+                    key={src}
+                    src={src}
+                    sizes="(min-width:768px) 29vw, 50vw"
+                    className={`aspect-[4/5] ${r.images.length === 3 && j === 0 ? "col-span-2 aspect-[4/3]" : ""}`}
+                  />
+                ))}
+              </div>
+            )}
           </article>
         ))}
-      </section>
-
-      <section className="wrap py-14 md:py-20">
-        <Gallery photos={interleaved()} />
       </section>
 
       <ContactBand />

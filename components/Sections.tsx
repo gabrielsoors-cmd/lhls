@@ -79,7 +79,7 @@ export function ContactBand({ heading = "Beskriv ditt projekt." }: { heading?: s
             <span>{site.email}</span>
             <span aria-hidden="true">→</span>
           </a>
-          <Link href="/kontakt" className="mt-2 text-sm text-paper/60 underline underline-offset-4 hover:text-paper">
+          <Link href="/kontakt/" className="mt-2 text-sm text-paper/60 underline underline-offset-4 hover:text-paper">
             Alla kontaktuppgifter
           </Link>
         </div>

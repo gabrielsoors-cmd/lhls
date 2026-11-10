@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   // Bara origin: Next lägger själv till basePath på filer (ikoner, delningsbild).
   metadataBase: new URL(new URL(site.url).origin),
   title: {
-    default: "Entreprenad & markarbete i Älvdalen | LHLS AB",
+    default: "Entreprenad & Markarbete i Älvdalen | Lokal Grävmaskinist",
     template: "%s | LHLS AB",
   },
   description: site.description,

@@ -1,29 +1,21 @@
 import Link from "next/link";
-import { HeroSlideshow, type Slide } from "./HeroSlideshow";
+import { HeroSlideshow } from "./HeroSlideshow";
+import { heroSlides } from "@/content/slides";
 import { Logo } from "./Logo";
 import { site } from "@/lib/site";
 
-const slides: Slide[] = [
-  { src: "/hero/hero-1968.jpg", alt: "", position: "50% 38%" },
-  { src: "/hero/hero-2231.jpg", alt: "", position: "50% 72%" },
-  { src: "/hero/hero-4221.jpg", alt: "", position: "50% 34%" },
-  { src: "/hero/hero-3155.jpg", alt: "", position: "50% 66%" },
-  { src: "/hero/hero-3222.jpg", alt: "", position: "50% 42%" },
-  { src: "/hero/hero-4665.jpg", alt: "", position: "50% 36%" },
-];
-
 const choices = [
   {
-    href: "/mark-och-anlaggning",
+    href: "/entreprenad/",
     n: "01",
-    title: "Mark & anläggning",
-    text: "Grunder, VA, el, finplanering och väg",
+    title: "Entreprenad & markarbeten",
+    text: "Finplanering, grunder, el, dränering, väg och VA",
   },
   {
-    href: "/lokalvard-stugservice",
+    href: "/lokalvard-stugservice/",
     n: "02",
     title: "Lokalvård & Stugservice",
-    text: "Hjälp med lokaler och stugor",
+    text: "Städning för företag och privatpersoner",
   },
 ];
 
@@ -33,7 +25,7 @@ export function Hero() {
       aria-labelledby="hero-rubrik"
       className="relative flex min-h-[640px] h-svh flex-col overflow-hidden bg-ink text-paper"
     >
-      <HeroSlideshow slides={slides} />
+      <HeroSlideshow slides={heroSlides} />
       {/* Mörkt skikt för läsbarhet över bilderna. */}
       <div className="absolute inset-0 z-20 bg-black/40" />
       <div className="absolute inset-x-0 bottom-0 z-20 h-2/3 bg-linear-to-t from-black/75 to-transparent" />
@@ -52,8 +44,8 @@ export function Hero() {
             {site.tagline}
           </h1>
           <p className="mt-5 max-w-md text-base text-paper/80 md:text-lg">
-            Lokalt företag som utför allt inom markarbete, dränering, schaktning och grävning i
-            norra Dalarna.
+            Lokal grävmaskinist och entreprenör i Älvdalen. Vi utför allt inom markarbete,
+            dränering, schaktning och grävning i norra Dalarna.
           </p>
         </div>
       </div>

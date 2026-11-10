@@ -35,41 +35,53 @@ export const site = {
   },
   region: "Norra Dalarna",
   /** Länk till företagets Google-profil (för "Se alla omdömen"). Fylls i när den finns. */
-  googleProfileUrl: "",
+  googleProfileUrl: "https://share.google/roFvWDmP6kHzw6yhW",
 } as const;
 
 export type Person = {
   name: string;
+  fullName: string;
   role: string;
   responsibility: string;
-  phone?: string;
-  phoneHref?: string;
-  email?: string;
+  phone: string;
+  phoneHref: string;
+  email: string;
+  /** Porträtt i /public (t.ex. "/people/linus.jpg"). Visas när det är satt. */
+  photo?: string;
 };
 
 export const people: Person[] = [
   {
     name: "Linus",
-    role: "Projektledare",
+    fullName: "Linus Sjödén",
+    role: "Projektansvarig & personalansvarig",
     responsibility: "Jobb, offerter och personal",
     phone: "079-358 54 55",
     phoneHref: "+46793585455",
+    email: "linus@lhls.se",
   },
   {
     name: "Hampus",
+    fullName: "Hampus Lagerberg",
     role: "Ekonomiansvarig",
-    responsibility: "Ekonomi och fakturor",
+    responsibility: "Ekonomi och fakturafrågor",
     phone: "070-381 52 51",
     phoneHref: "+46703815251",
+    email: "hampus@lhls.se",
   },
 ];
 
 export const nav = [
-  { href: "/mark-och-anlaggning", label: "Mark & anläggning" },
-  { href: "/lokalvard-stugservice", label: "Lokalvård & Stugservice" },
-  { href: "/referenser", label: "Referenser" },
-  { href: "/om-oss", label: "Om oss" },
+  { href: "/entreprenad/", label: "Entreprenad" },
+  { href: "/lokalvard-stugservice/", label: "Lokalvård & Stugservice" },
+  { href: "/projekt/", label: "Projekt" },
+  { href: "/referenser/", label: "Referenser" },
+  { href: "/om-oss/", label: "Om oss" },
 ] as const;
+
+/** Färdigt mejl med ämnesrad – används på kontaktsidan. */
+export const mailtoTo = (email: string) =>
+  `mailto:${email}?subject=${encodeURIComponent("Förfrågan via lhls.se")}`;
 
 export const mailtoProject = `mailto:${site.email}?subject=${encodeURIComponent(
   "Förfrågan via lhls.se",

@@ -47,7 +47,7 @@ export function Header() {
           <LogoLink tone={home ? "light" : "dark"} />
         </div>
 
-        <nav aria-label="Huvudmeny" className="hidden items-center gap-8 md:flex">
+        <nav aria-label="Huvudmeny" className="hidden items-center gap-7 lg:flex">
           {nav.map((item) => (
             <Link
               key={item.href}
@@ -59,7 +59,7 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/kontakt"
+            href="/kontakt/"
             className={`ml-2 border px-5 py-2.5 text-[0.9rem] font-medium transition-colors ${
               home
                 ? "border-paper hover:bg-paper hover:text-ink"
@@ -72,7 +72,7 @@ export function Header() {
 
         <button
           type="button"
-          className="-mr-2 flex h-11 w-11 items-center justify-center md:hidden"
+          className="-mr-2 flex h-11 w-11 items-center justify-center lg:hidden"
           aria-expanded={open}
           aria-controls="mobilmeny"
           aria-label={open ? "Stäng meny" : "Öppna meny"}
@@ -92,7 +92,7 @@ export function Header() {
       {open && (
         <div
           id="mobilmeny"
-          className="fixed inset-0 z-50 flex flex-col bg-ink px-5 pb-8 pt-4 text-paper md:hidden"
+          className="fixed inset-0 z-50 flex flex-col bg-ink px-5 pb-8 pt-4 text-paper lg:hidden"
         >
           <div className="flex h-12 items-center justify-between">
             <LogoLink tone="light" />
@@ -109,7 +109,7 @@ export function Header() {
             </button>
           </div>
           <nav aria-label="Mobilmeny" className="mt-10 flex flex-1 flex-col">
-            {[...nav, { href: "/kontakt", label: "Kontakt" }].map((item) => (
+            {[...nav, { href: "/kontakt/", label: "Kontakt" }].map((item) => (
               <Link
                 key={item.href}
                 href={item.href}

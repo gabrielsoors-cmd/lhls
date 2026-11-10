@@ -16,7 +16,7 @@ export function Footer() {
         <nav aria-label="Sidor" className="md:col-span-3">
           <h2 className="eyebrow text-paper/50">Sidor</h2>
           <ul className="mt-5 space-y-3 text-sm">
-            {[...nav, { href: "/kontakt", label: "Kontakt" }].map((i) => (
+            {[...nav, { href: "/kontakt/", label: "Kontakt" }].map((i) => (
               <li key={i.href}>
                 <Link href={i.href} className="hover:underline underline-offset-4">
                   {i.label}
@@ -48,7 +48,11 @@ export function Footer() {
       <div className="border-t border-paper/15">
         <div className="wrap flex flex-col gap-2 py-6 text-xs text-paper/50 sm:flex-row sm:justify-between">
           <span>© {site.legalName}</span>
-          <span>Org.nr {site.orgNr}</span>
+          <span className="flex flex-wrap gap-x-5 gap-y-1">
+            <Link href="/allmanna-villkor/" className="hover:text-paper">Allmänna villkor</Link>
+            <Link href="/integritetspolicy/" className="hover:text-paper">Integritetspolicy</Link>
+            <span>Org.nr {site.orgNr}</span>
+          </span>
         </div>
       </div>
     </footer>

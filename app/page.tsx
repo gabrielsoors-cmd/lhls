@@ -6,9 +6,11 @@ import { Reviews } from "@/components/Reviews";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Entreprenad & markarbete i Älvdalen",
+  // Samma titel som den gamla webbplatsen hade, för att behålla rankingen på "grävmaskinist".
+  title: "Entreprenad & Markarbete i Älvdalen | Lokal Grävmaskinist",
+  absoluteTitle: true,
   description:
-    "LHLS AB är ett lokalt entreprenadföretag i Älvdalen. Markarbete, dränering, schaktning, husgrunder, VA och finplanering i norra Dalarna. Inget jobb är för stort eller för litet.",
+    "LHLS AB är ett lokalt entreprenadföretag och grävmaskinist i Älvdalen. Markarbete, dränering, schaktning, husgrunder, VA och finplanering i norra Dalarna. Inget jobb är för stort eller för litet.",
   path: "/",
 });
 
@@ -25,15 +27,38 @@ export default function Home() {
     <>
       <Hero />
 
+      <section className="border-b border-line" aria-labelledby="maskiner">
+        <div className="wrap grid gap-8 py-12 md:grid-cols-12 md:items-center md:py-16">
+          <div className="md:col-span-8">
+            <p className="eyebrow text-steel">Maskiner &amp; maskinförare</p>
+            <h2 id="maskiner" className="display mt-5 text-3xl sm:text-4xl md:text-5xl">
+              Behöver ni maskiner och bra maskinförare till era större projekt?
+            </h2>
+            <p className="mt-5 max-w-xl text-steel">
+              Vi ställer upp med erfarna grävmaskinister och maskinförare i norra Dalarna. Hör av dig
+              så pratar vi om ert projekt.
+            </p>
+          </div>
+          <div className="md:col-span-4 md:text-right">
+            <Link
+              href="/kontakt/"
+              className="inline-block bg-ink px-7 py-4 text-sm font-medium text-paper transition-opacity hover:opacity-85"
+            >
+              Kontakta oss →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="wrap grid gap-10 py-20 md:grid-cols-12 md:py-32">
         <p className="eyebrow text-steel md:col-span-3">Om LHLS</p>
         <div className="md:col-span-9">
           <p className="display text-3xl sm:text-4xl md:text-5xl">
-            Ett lokalt företag från Älvdalen som gräver, schaktar och bygger mark – från en enskild
-            tomt till mångkilometerlånga ledningar.
+            Lokala grävmaskinister från Älvdalen som gräver, schaktar och bygger mark – från en
+            enskild tomt till mångkilometerlånga ledningar.
           </p>
           <Link
-            href="/om-oss"
+            href="/om-oss/"
             className="mt-10 inline-block border-b border-ink pb-1 text-sm font-medium hover:opacity-60"
           >
             Läs mer om oss →
@@ -44,9 +69,9 @@ export default function Home() {
       <section className="border-t border-line">
         <div className="wrap py-16 md:py-24">
           <div className="flex items-end justify-between gap-6">
-            <h2 className="display text-4xl md:text-6xl">Mark &amp; anläggning</h2>
+            <h2 className="display text-4xl md:text-6xl">Entreprenad &amp; markarbeten</h2>
             <Link
-              href="/mark-och-anlaggning"
+              href="/entreprenad/"
               className="hidden shrink-0 border-b border-ink pb-1 text-sm font-medium hover:opacity-60 sm:block"
             >
               Alla tjänster →
@@ -57,7 +82,7 @@ export default function Home() {
             {services.map((s, i) => (
               <li key={s.id} className="border-b border-line">
                 <Link
-                  href={`/mark-och-anlaggning#${s.id}`}
+                  href={`/entreprenad/#${s.id}`}
                   className="group grid grid-cols-[2.5rem_1fr_auto] items-center gap-x-4 py-6 md:grid-cols-[4rem_1fr_16rem_auto] md:gap-x-8 md:py-8"
                 >
                   <span className="eyebrow text-steel">{String(i + 1).padStart(2, "0")}</span>
@@ -81,9 +106,9 @@ export default function Home() {
       <section className="bg-mist">
         <div className="wrap py-16 md:py-24">
           <div className="flex items-end justify-between gap-6">
-            <h2 className="display text-4xl md:text-6xl">Referenser</h2>
+            <h2 className="display text-4xl md:text-6xl">Projekt</h2>
             <Link
-              href="/referenser"
+              href="/projekt/"
               className="shrink-0 border-b border-ink pb-1 text-sm font-medium hover:opacity-60"
             >
               Se galleriet →
@@ -107,10 +132,13 @@ export default function Home() {
           <div className="md:col-span-8">
             <p className="eyebrow text-steel">Verksamhetsområde 02</p>
             <h2 className="display mt-6 text-4xl md:text-6xl">Lokalvård &amp; Stugservice</h2>
+            <p className="mt-5 max-w-lg text-steel">
+              Städning för företag och privatpersoner i Idre, Särna och Älvdalen.
+            </p>
           </div>
           <div className="md:col-span-4 md:text-right">
             <Link
-              href="/lokalvard-stugservice"
+              href="/lokalvard-stugservice/"
               className="inline-block border border-ink px-6 py-4 text-sm font-medium transition-colors hover:bg-ink hover:text-paper"
             >
               Läs mer →

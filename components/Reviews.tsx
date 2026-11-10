@@ -15,6 +15,25 @@ export function Reviews() {
   const profileUrl = data?.url || site.googleProfileUrl;
   if (!data && !profileUrl) return null;
 
+  // Utan hämtade omdömen: en enkel länk till Google-profilen.
+  if (!data) {
+    return (
+      <section className="border-t border-line" aria-label="Omdömen">
+        <div className="wrap flex flex-col gap-4 py-12 sm:flex-row sm:items-center sm:justify-between md:py-16">
+          <p className="display text-2xl md:text-3xl">Vad säger våra kunder?</p>
+          <a
+            href={profileUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="self-start border border-ink px-6 py-4 text-sm font-medium transition-colors hover:bg-ink hover:text-paper"
+          >
+            Läs omdömen på Google →
+          </a>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="border-t border-line" aria-labelledby="omdomen">
       <div className="wrap py-16 md:py-24">

@@ -1,23 +1,37 @@
 import Link from "next/link";
-import { ContactBand, PageHeader, Pic } from "@/components/Sections";
+import { ContactBand, Pic } from "@/components/Sections";
+import { HeroSlideshow } from "@/components/HeroSlideshow";
+import { entreprenadSlides } from "@/content/slides";
 import { services } from "@/content/services";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Mark & anläggning i Älvdalen",
+  title: "Entreprenad & markarbeten i Älvdalen",
   description:
-    "Finplanering, plattläggning, husgrunder med 10 års garanti, vatten och avlopp, el och belysning samt vägbyggnation i Älvdalen och norra Dalarna.",
-  path: "/mark-och-anlaggning",
+    "Finplanering, husgrunder, el och belysning, dränering, vägbyggnation samt vatten och avlopp i Älvdalen och norra Dalarna. Lokal grävmaskinist och entreprenör.",
+  path: "/entreprenad/",
 });
 
-export default function MarkOchAnlaggning() {
+export default function Entreprenad() {
   return (
     <>
-      <PageHeader
-        eyebrow="Verksamhetsområde 01"
-        title="Mark & anläggning"
-        lead="Lokalt företag som utför allt inom markarbete, dränering, schaktning och grävning i norra Dalarna. Inget jobb är för stort eller för litet."
-      />
+      <section
+        aria-labelledby="entreprenad-rubrik"
+        className="relative h-[72svh] min-h-[460px] overflow-hidden bg-ink text-paper"
+      >
+        <HeroSlideshow slides={entreprenadSlides} />
+        <div className="absolute inset-0 z-20 bg-black/35" />
+        <div className="absolute inset-x-0 bottom-0 z-20 h-2/3 bg-linear-to-t from-black/75 to-transparent" />
+        <div className="wrap relative z-30 flex h-full flex-col justify-end pb-10 md:pb-16">
+          <p className="eyebrow text-paper/80">Verksamhetsområde 01</p>
+          <h1 id="entreprenad-rubrik" className="display mt-5 max-w-4xl text-4xl sm:text-6xl md:text-7xl">
+            Entreprenad &amp; markarbeten
+          </h1>
+          <p className="mt-6 max-w-xl text-base text-paper/85 md:text-lg">
+            Lokal grävmaskinist och entreprenör i Älvdalen. Inget jobb är för stort eller för litet.
+          </p>
+        </div>
+      </section>
 
       {services.map((s, i) => (
         <section
@@ -44,12 +58,7 @@ export default function MarkOchAnlaggning() {
                 position="50% 55%"
               />
               {s.images.slice(1, 3).map((src) => (
-                <Pic
-                  key={src}
-                  src={src}
-                  sizes="(min-width:768px) 29vw, 50vw"
-                  className="aspect-[4/5]"
-                />
+                <Pic key={src} src={src} sizes="(min-width:768px) 29vw, 50vw" className="aspect-[4/5]" />
               ))}
             </div>
           </div>
@@ -60,10 +69,10 @@ export default function MarkOchAnlaggning() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="display text-2xl md:text-3xl">Se fler bilder från våra jobb.</p>
           <Link
-            href="/referenser"
+            href="/projekt/"
             className="self-start border border-ink px-6 py-4 text-sm font-medium transition-colors hover:bg-ink hover:text-paper"
           >
-            Referenser →
+            Projekt →
           </Link>
         </div>
       </section>

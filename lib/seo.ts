@@ -3,6 +3,8 @@ import { site } from "./site";
 
 type Input = {
   title: string;
+  /** Sant = använd titeln som den är, utan " | LHLS AB"-suffix. */
+  absoluteTitle?: boolean;
   description: string;
   /** Sökväg som börjar med "/", t.ex. "/kontakt". */
   path: string;
@@ -13,11 +15,11 @@ type Input = {
  * titel-formel, canonical och delningsdata hanteras på ett ställe.
  * Titeln får suffixet " | LHLS AB" via title.template i root-layouten.
  */
-export function buildMetadata({ title, description, path }: Input): Metadata {
+export function buildMetadata({ title, absoluteTitle, description, path }: Input): Metadata {
   // Med trailingSlash i next.config.ts är alla sidor /namn/ – canonical ska matcha.
   const url = `${site.url}${path.endsWith("/") ? path : `${path}/`}`;
   return {
-    title,
+    title: absoluteTitle ? { absolute: title } : title,
     description,
     alternates: { canonical: url },
     openGraph: {
@@ -51,9 +53,14 @@ export const localBusinessJsonLd = {
   areaServed: [
     { "@type": "AdministrativeArea", name: "Älvdalens kommun" },
     { "@type": "AdministrativeArea", name: "Norra Dalarna" },
+    { "@type": "City", name: "Idre" },
+    { "@type": "City", name: "Särna" },
   ],
   knowsAbout: [
+    "Grävmaskinist",
     "Markarbete",
+    "Lokalvård",
+    "Städning",
     "Dränering",
     "Schaktning",
     "Husgrunder",

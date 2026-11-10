@@ -1,6 +1,6 @@
 /**
- * Tjänsterna under "Mark & anläggning". Texterna bygger på den gamla
- * webbplatsen (lhls.se) men är omformulerade. Bilderna hämtas ur galleriet.
+ * Tjänsterna under Entreprenad. Texterna kommer från Linus och Hampus
+ * (nov 2026), lätt språkgranskade. Bilderna hämtas ur galleriet.
  */
 export type Service = {
   id: string;
@@ -14,9 +14,9 @@ export type Service = {
 export const services: Service[] = [
   {
     id: "finplanering",
-    title: "Finplanering & plattläggning",
-    short: "Tomtplanering, infarter, uteplatser och marksten.",
-    text: "Komplett tomtplanering med schaktning och markförberedelse. Vi bygger infarter och uteplatser och lägger marksten med raka linjer och ordentlig finish.",
+    title: "Finplanering",
+    short: "Återställning och förbättring av din gård.",
+    text: "Återställning och förbättring av din gård, med allt från planering av ytor, jämn och fin gräsmatta och planteringar till stentrappor, stenläggning, L-stöd och asfaltsjusteringar.",
     images: [
       "/images/finplanering-2829.jpg",
       "/images/finplanering-1958.jpg",
@@ -27,32 +27,20 @@ export const services: Service[] = [
   {
     id: "grunder",
     title: "Husgrunder & utbyggnationer",
-    short: "Grunder med 10 års garanti. Vi gör allt inom grunder.",
-    text: "Professionella husgrunder med 10 års garanti. Vi gör allt inom grunder: utgrävning, dränering och markförberedelse för hus, garage och utbyggnationer.",
+    short: "Från orörd tomt till färdig gjuten platta.",
+    text: "Från orörd tomt till färdig gjuten platta. Stora nybyggen och små utbyggnationer av din villa.",
     images: [
       "/images/grunder-3158.jpg",
       "/images/grunder-4257.jpg",
-      "/images/grunder-6454.jpg",
+      "/images/grunder-2367.jpg",
       "/images/grunder-7933.jpg",
-    ],
-  },
-  {
-    id: "va",
-    title: "Vatten & avlopp",
-    short: "Ledningsgravar, avlopp, vattenledningar och PE-svetsning.",
-    text: "Ledningsgravar för vatten och avlopp, brunnar och anslutningar. Bland våra projekt finns en 7 km lång snökanonledning, och vi stumsvetsar PE-rör.",
-    images: [
-      "/images/va-2231.jpg",
-      "/images/va-4757.jpg",
-      "/images/va-4788.jpg",
-      "/images/va-7815.jpg",
     ],
   },
   {
     id: "el",
     title: "El & belysning",
-    short: "Schaktning för elkablar och elanslutning.",
-    text: "Schaktning för elkablar och elanslutning. Vi gräver och förbereder för kabelskyddsrör, belysning och anslutningar.",
+    short: "Grävning för elkablar och belysningsfundament.",
+    text: "Stora som små projekt. Vi gräver för elkablar och sätter belysningsfundament, alltid med ett fint och snyggt resultat efter oss.",
     images: [
       "/images/el-0059.jpg",
       "/images/el-2150.jpg",
@@ -61,15 +49,39 @@ export const services: Service[] = [
     ],
   },
   {
+    id: "dranering",
+    title: "Dränering",
+    short: "Fukt i källaren eller en blöt trädgård?",
+    text: "Problem med fukt i källaren? Eller en väldigt blöt trädgård? Vi utför dräneringar på stora som små hus och även i din trädgård.",
+    images: [
+      "/images/grunder-7917.jpg",
+      "/images/grunder-6454.jpg",
+      "/images/mark-1902.jpg",
+      "/images/finplanering-1908.jpg",
+    ],
+  },
+  {
     id: "vag",
     title: "Vägbyggnation",
-    short: "Schakt längs vägar och nyanläggning av grusvägar.",
-    text: "Schaktarbeten längs vägar och nyanläggning av grusvägar, med egna maskiner och egen personal.",
+    short: "Ny väg, dikning, trumbyten och grusning.",
+    text: "Brytning av ny väg och underhåll av vägar, till exempel dikning, trumbyten, grusning och byte av material i vägbanken.",
     images: [
       "/images/vag-3155.jpg",
       "/images/vag-3137.jpg",
       "/images/vag-7028.jpg",
       "/images/vag-4225.jpg",
+    ],
+  },
+  {
+    id: "va",
+    title: "Vatten & avlopp",
+    short: "Nya VA-stammar, ingrävning och vattenläckor.",
+    text: "Allt från nya VA-stammar till ingrävning av VA till din befintliga bostad. Vi hjälper dig även vid vattenläckor.",
+    images: [
+      "/images/va-2231.jpg",
+      "/images/va-2405.jpg",
+      "/images/va-6457.jpg",
+      "/images/va-7815.jpg",
     ],
   },
 ];
