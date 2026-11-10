@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated at build
+/public/img/
+/content/reviews.generated.json
+/out/
+/lib/image-sizes.generated.json

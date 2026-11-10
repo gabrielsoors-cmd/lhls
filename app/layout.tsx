@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { site } from "@/lib/site";
+import { googleSiteVerification, isProduction, site } from "@/lib/site";
 import { localBusinessJsonLd } from "@/lib/seo";
 
 const archivo = localFont({
@@ -21,13 +21,17 @@ const inter = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
+  // Bara origin: Next lägger själv till basePath på filer (ikoner, delningsbild).
+  metadataBase: new URL(new URL(site.url).origin),
   title: {
     default: "Entreprenad & markarbete i Älvdalen | LHLS AB",
     template: "%s | LHLS AB",
   },
   description: site.description,
   applicationName: site.name,
+  // Förhandsvisningen på github.io ska aldrig indexeras.
+  robots: isProduction ? undefined : { index: false, follow: false },
+  verification: googleSiteVerification ? { google: googleSiteVerification } : undefined,
   openGraph: { locale: "sv_SE", siteName: site.name, type: "website" },
 };
 

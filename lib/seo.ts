@@ -14,14 +14,16 @@ type Input = {
  * Titeln får suffixet " | LHLS AB" via title.template i root-layouten.
  */
 export function buildMetadata({ title, description, path }: Input): Metadata {
+  // Med trailingSlash i next.config.ts är alla sidor /namn/ – canonical ska matcha.
+  const url = `${site.url}${path.endsWith("/") ? path : `${path}/`}`;
   return {
     title,
     description,
-    alternates: { canonical: path },
+    alternates: { canonical: url },
     openGraph: {
       title,
       description,
-      url: path,
+      url,
       siteName: site.name,
       locale: "sv_SE",
       type: "website",

@@ -3,10 +3,24 @@
  * Personliga nummer/mejl för Linus och Hampus kan läggas till under `people`
  * – tills dess används företagets gemensamma uppgifter.
  */
+/** Prefix för /public-filer när sidan ligger under en undersökväg (förhandsvisning). */
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+export const asset = (path: string) => `${basePath}${path}`;
+
+/** Sant först när NEXT_PUBLIC_SITE_URL är satt, dvs. i produktionsbygget. */
+export const isProduction = Boolean(process.env.NEXT_PUBLIC_SITE_URL);
+
+/**
+ * Google Search Console: klistra in verifieringskoden (bara värdet i
+ * content="…") här, eller sätt repo-variabeln GOOGLE_SITE_VERIFICATION.
+ * Behövs inte om ni verifierar via DNS (Domain-egenskap).
+ */
+export const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "";
+
 export const site = {
   name: "LHLS AB",
   legalName: "LHLS Aktiebolag",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.lhls.se",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://gabrielsoors-cmd.github.io/lhls",
   tagline: "Inget jobb är för stort eller för litet.",
   description:
     "Lokalt entreprenadföretag i Älvdalen. Markarbete, dränering, schaktning, grunder och grävning i norra Dalarna.",
@@ -20,6 +34,8 @@ export const site = {
     country: "SE",
   },
   region: "Norra Dalarna",
+  /** Länk till företagets Google-profil (för "Se alla omdömen"). Fylls i när den finns. */
+  googleProfileUrl: "",
 } as const;
 
 export type Person = {
@@ -36,11 +52,15 @@ export const people: Person[] = [
     name: "Linus",
     role: "Projektledare",
     responsibility: "Jobb, offerter och personal",
+    phone: "079-358 54 55",
+    phoneHref: "+46793585455",
   },
   {
     name: "Hampus",
     role: "Ekonomiansvarig",
     responsibility: "Ekonomi och fakturor",
+    phone: "070-381 52 51",
+    phoneHref: "+46703815251",
   },
 ];
 
