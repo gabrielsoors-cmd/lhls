@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { HeroSlideshow, type Slide } from "./HeroSlideshow";
-import { Wordmark } from "./Logo";
+import { Logo } from "./Logo";
 import { site } from "@/lib/site";
 
 const slides: Slide[] = [
@@ -40,10 +40,10 @@ export function Hero() {
 
       <div className="wrap relative z-30 flex flex-1 flex-col justify-end pb-10 pt-28 md:pb-14">
         <div className="rise max-w-3xl">
-          <Wordmark className="text-6xl sm:text-7xl md:text-8xl" />
+          <Logo tone="light" className="h-auto w-56 sm:w-72 md:w-96" />
           <div className="mt-5 flex items-center gap-4">
             <span className="h-px w-12 bg-paper" />
-            <span className="eyebrow">Entreprenad · {site.address.locality}</span>
+            <span className="eyebrow">{site.address.locality} · {site.region}</span>
           </div>
           <h1
             id="hero-rubrik"

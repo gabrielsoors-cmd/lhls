@@ -1,29 +1,27 @@
 import Link from "next/link";
+import { asset } from "@/lib/site";
 
 /**
- * Typografisk logotyp. Byt ut mot riktig logotyp (SVG) när den finns:
- * lägg filen i /public och rendera den här i stället för texten.
+ * Företagets logotyp (SVG i /public). Två varianter: mörk för ljus bakgrund,
+ * ljus för mörk bakgrund. Vanlig <img> eftersom SVG inte behöver optimeras.
  */
-export function Wordmark({ className = "" }: { className?: string }) {
+export function Logo({ tone = "dark", className = "" }: { tone?: "dark" | "light"; className?: string }) {
   return (
-    <span
-      className={`display inline-block uppercase ${className}`}
-      style={{ fontVariationSettings: '"wdth" 125', letterSpacing: "-0.01em" }}
-    >
-      LHLS
-    </span>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={asset(tone === "light" ? "/logo-light.svg" : "/logo-dark.svg")}
+      alt="LHLS AB Entreprenad"
+      width={371}
+      height={99}
+      className={className}
+    />
   );
 }
 
 export function LogoLink({ tone = "dark" }: { tone?: "dark" | "light" }) {
   return (
-    <Link
-      href="/"
-      aria-label="LHLS AB, startsida"
-      className={`flex items-baseline gap-2 ${tone === "light" ? "text-paper" : "text-ink"}`}
-    >
-      <Wordmark className="text-2xl" />
-      <span className="eyebrow hidden opacity-70 sm:inline">AB</span>
+    <Link href="/" aria-label="LHLS AB, startsida" className="block">
+      <Logo tone={tone} className="h-9 w-auto md:h-10" />
     </Link>
   );
 }

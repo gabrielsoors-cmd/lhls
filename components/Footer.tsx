@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Wordmark } from "./Logo";
+import { Logo } from "./Logo";
 import { nav, site } from "@/lib/site";
 
 export function Footer() {
@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="bg-ink text-paper">
       <div className="wrap grid gap-12 py-16 md:grid-cols-12 md:py-20">
         <div className="md:col-span-5">
-          <Wordmark className="text-5xl" />
+          <Logo tone="light" className="h-auto w-48" />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-paper/65">
             Lokalt entreprenadföretag i {site.address.locality}. {site.tagline}
           </p>
