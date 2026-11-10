@@ -1,7 +1,7 @@
 /**
- * Google-omdömen. Tomt tills riktiga omdömen läggs in – sektionen på
- * startsidan visas bara när listan innehåller något. Hitta aldrig på
- * omdömen här; kopiera exakt text från företagets Google-profil.
+ * Manuella omdömen – reserv om Google-hämtningen inte är uppsatt.
+ * Använd bara exakt text från företagets Google-profil. Hitta aldrig på omdömen.
+ * Med scripts/fetch-reviews.mjs aktivt används Googles data i stället.
  */
 export type Review = { author: string; text: string };
 

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Hero } from "@/components/Hero";
 import { ContactBand, Pic } from "@/components/Sections";
 import { services } from "@/content/services";
-import { reviews } from "@/content/reviews";
+import { Reviews } from "@/components/Reviews";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -119,21 +119,7 @@ export default function Home() {
         </div>
       </section>
 
-      {reviews.length > 0 && (
-        <section className="wrap py-16 md:py-24">
-          <h2 className="display text-4xl md:text-6xl">Omdömen</h2>
-          <ul className="mt-12 grid gap-10 md:grid-cols-3">
-            {reviews.map((r) => (
-              <li key={r.author} className="border-t border-ink pt-6">
-                <p className="text-lg leading-relaxed">{r.text}</p>
-                <p className="mt-4 text-sm text-steel">
-                  {r.author} · Google
-                </p>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      <Reviews />
 
       <ContactBand />
     </>
