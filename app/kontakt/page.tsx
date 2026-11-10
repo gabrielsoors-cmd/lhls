@@ -102,7 +102,7 @@ export default function Kontakt() {
                     rel="noopener noreferrer"
                     className="underline underline-offset-4 hover:no-underline"
                   >
-                    Se oss på Google →
+                    Lämna en recension →
                   </a>
                 </dd>
               </div>
