@@ -1,0 +1,534 @@
+[
+ {
+  "src": "/images/mark-1968.jpg",
+  "cat": "mark",
+  "alt": "Grävmaskin som planerar en större markyta",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/mark-1970.jpg",
+  "cat": "mark",
+  "alt": "Grävmaskin på tomt med utplanerad grusyta",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/mark-2183.jpg",
+  "cat": "mark",
+  "alt": "Grävmaskin och markduk på tomt inför markförstärkning",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/mark-2187.jpg",
+  "cat": "mark",
+  "alt": "Utplanerad byggyta i skymning vid bostadsområde",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/mark-2189.jpg",
+  "cat": "mark",
+  "alt": "Grävmaskin som arbetar vid bostadshus",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/mark-3222.jpg",
+  "cat": "mark",
+  "alt": "Hjulgrävare med skopa vid dikesarbete",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/mark-3953.jpg",
+  "cat": "mark",
+  "alt": "Schaktat dike på öppet fält",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/mark-4221.jpg",
+  "cat": "mark",
+  "alt": "Hjulgrävare med flak vid sjö",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/mark-4665.jpg",
+  "cat": "mark",
+  "alt": "Grävmaskin vid rött hus",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/mark-7036.jpg",
+  "cat": "mark",
+  "alt": "Utsikt från grävmaskinens hytt över skogsväg",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/mark-7041.jpg",
+  "cat": "mark",
+  "alt": "Nyanlagd grusväg genom skog",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/mark-7900.jpg",
+  "cat": "mark",
+  "alt": "Hjullastare fyller på massor vid gårdsbyggnader",
+  "w": 828,
+  "h": 1090
+ },
+ {
+  "src": "/images/mark-1902.jpg",
+  "cat": "mark",
+  "alt": "Dränering längs husvägg",
+  "w": 1012,
+  "h": 1800
+ },
+ {
+  "src": "/images/mark-3121.jpg",
+  "cat": "mark",
+  "alt": "Förare på hjulgrävare utanför verkstad",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-1908.jpg",
+  "cat": "finplanering",
+  "alt": "Dränering med geotextil intill husgrund",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-1917.jpg",
+  "cat": "finplanering",
+  "alt": "Markarbete vid betongmur med utsättningsinstrument",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-1929.jpg",
+  "cat": "finplanering",
+  "alt": "Stensättning vid stödmur",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-1934.jpg",
+  "cat": "finplanering",
+  "alt": "Kapning av marksten på plats",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-1944.jpg",
+  "cat": "finplanering",
+  "alt": "Stentrappa och packning av underlag",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-1958.jpg",
+  "cat": "finplanering",
+  "alt": "Marksten läggs i sättsand",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-1959.jpg",
+  "cat": "finplanering",
+  "alt": "Granittrappa vid nyanlagd plan",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-2141.jpg",
+  "cat": "finplanering",
+  "alt": "Marksten och stödmur vid nybyggt hus",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-2523.jpg",
+  "cat": "finplanering",
+  "alt": "Planering av grusyta längs husfasad",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-2532.jpg",
+  "cat": "finplanering",
+  "alt": "Grävmaskin fördelar grus längs husfasad",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-2545.jpg",
+  "cat": "finplanering",
+  "alt": "Nyanlagd grusväg med dike",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-2563.jpg",
+  "cat": "finplanering",
+  "alt": "Nyanlagd grusinfart vid fritidshus",
+  "w": 1179,
+  "h": 1572
+ },
+ {
+  "src": "/images/finplanering-2623.jpg",
+  "cat": "finplanering",
+  "alt": "Marksten läggs vid timmerhus",
+  "w": 1012,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-2829.jpg",
+  "cat": "finplanering",
+  "alt": "Färdig marksten vid timmerhus",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-2838.jpg",
+  "cat": "finplanering",
+  "alt": "Färdig plattsättning vid rött hus",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/finplanering-7068.jpg",
+  "cat": "finplanering",
+  "alt": "Planerad tomtyta med utsättningsstång",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-2252.jpg",
+  "cat": "grunder",
+  "alt": "Utsikt från grävmaskin över schakt för grund",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-2356.jpg",
+  "cat": "grunder",
+  "alt": "Formsättning för grundkant",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-2367.jpg",
+  "cat": "grunder",
+  "alt": "Färdig grundplatta för stuga",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-3158.jpg",
+  "cat": "grunder",
+  "alt": "Grundplatta med dräneringsslang",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-4222.jpg",
+  "cat": "grunder",
+  "alt": "Minigrävare i källarutrymme",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-4224.jpg",
+  "cat": "grunder",
+  "alt": "Dränering och brunn i källargolv",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-4257.jpg",
+  "cat": "grunder",
+  "alt": "Armering inför gjutning av källargolv",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-4606.jpg",
+  "cat": "grunder",
+  "alt": "Planering av grusbädd inför grundläggning",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-4644.jpg",
+  "cat": "grunder",
+  "alt": "Grundplatta sedd från grävmaskinens hytt",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-5978.jpg",
+  "cat": "grunder",
+  "alt": "Gjuten golvyta med rörinföring",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-6453.jpg",
+  "cat": "grunder",
+  "alt": "Markduk inför grundläggning",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-6454.jpg",
+  "cat": "grunder",
+  "alt": "Markduk och dräneringsrör vid grundläggning",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-7917.jpg",
+  "cat": "grunder",
+  "alt": "Utgrävning och dränering vid befintlig stuga",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/grunder-7933.jpg",
+  "cat": "grunder",
+  "alt": "Färdig grusplan intill stuga",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-2231.jpg",
+  "cat": "va",
+  "alt": "Avloppsledning i ledningsgrav",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-2233.jpg",
+  "cat": "va",
+  "alt": "Isolering i ledningsgrav",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-2401.jpg",
+  "cat": "va",
+  "alt": "Packning av ledningsbädd",
+  "w": 1170,
+  "h": 1560
+ },
+ {
+  "src": "/images/va-2405.jpg",
+  "cat": "va",
+  "alt": "Avloppsrör i ledningsgrav",
+  "w": 1170,
+  "h": 1560
+ },
+ {
+  "src": "/images/va-2490.jpg",
+  "cat": "va",
+  "alt": "Schakt längs timmerhus",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-2494.jpg",
+  "cat": "va",
+  "alt": "Montering av ledning i djup grop",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-2573.jpg",
+  "cat": "va",
+  "alt": "Förankrat rör i schakt",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-4666.jpg",
+  "cat": "va",
+  "alt": "Ledningsschakt i bostadsområde",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-4672.jpg",
+  "cat": "va",
+  "alt": "Djup ledningsgrav med kabelrör",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-4679.jpg",
+  "cat": "va",
+  "alt": "Hjulgrävare vid djup grop",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-4756.jpg",
+  "cat": "va",
+  "alt": "Snökanonledning: nedgrävd ledning mot brunn",
+  "w": 1179,
+  "h": 1579
+ },
+ {
+  "src": "/images/va-4757.jpg",
+  "cat": "va",
+  "alt": "Snökanonledning: rörgrav genom skogen",
+  "w": 1179,
+  "h": 1573
+ },
+ {
+  "src": "/images/va-4758.jpg",
+  "cat": "va",
+  "alt": "Snökanonledning: rör och kablar i grav",
+  "w": 1164,
+  "h": 1561
+ },
+ {
+  "src": "/images/va-4759.jpg",
+  "cat": "va",
+  "alt": "Svetsad kopplingsmuff på PE-rör",
+  "w": 1179,
+  "h": 1568
+ },
+ {
+  "src": "/images/va-6439.jpg",
+  "cat": "va",
+  "alt": "Ventil på vattenledning",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-6440.jpg",
+  "cat": "va",
+  "alt": "Avloppsrör med grenrör",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-6457.jpg",
+  "cat": "va",
+  "alt": "Grenrör för avlopp på makadam",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-7025.jpg",
+  "cat": "va",
+  "alt": "Schakt för ledning i skogsmark",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-7815.jpg",
+  "cat": "va",
+  "alt": "Nedgrävd tank i grop",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/el-0059.jpg",
+  "cat": "el",
+  "alt": "Kabelskyddsrör i grävt dike",
+  "w": 1179,
+  "h": 1576
+ },
+ {
+  "src": "/images/el-2150.jpg",
+  "cat": "el",
+  "alt": "Kabelskyddsrör läggs i schakt",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/el-5752.jpg",
+  "cat": "el",
+  "alt": "Kabelrör upp ur fundament",
+  "w": 1008,
+  "h": 1792
+ },
+ {
+  "src": "/images/el-7069.jpg",
+  "cat": "el",
+  "alt": "Kabelgrav vid bebyggelse",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/vag-2438.jpg",
+  "cat": "vag",
+  "alt": "Grusväg sedd från grävmaskinens hytt",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/vag-3135.jpg",
+  "cat": "vag",
+  "alt": "Vägarbete med hjulgrävare",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/vag-3137.jpg",
+  "cat": "vag",
+  "alt": "Schakt längs asfalterad väg",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/vag-3149.jpg",
+  "cat": "vag",
+  "alt": "Vägarbete med skyltning",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/vag-3155.jpg",
+  "cat": "vag",
+  "alt": "LHLS hjulgrävare vid vägkant",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/vag-4225.jpg",
+  "cat": "vag",
+  "alt": "Grusväg vid gårdar",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/vag-7028.jpg",
+  "cat": "vag",
+  "alt": "Nyanlagd grusväg",
+  "w": 1350,
+  "h": 1800
+ },
+ {
+  "src": "/images/va-4787.jpg",
+  "cat": "va",
+  "alt": "Stumsvetsning av PE-rör: spännbackar på maskinen",
+  "w": 1108,
+  "h": 1559
+ },
+ {
+  "src": "/images/va-4788.jpg",
+  "cat": "va",
+  "alt": "Stumsvetsmaskin för PE-rör",
+  "w": 1108,
+  "h": 1552
+ }
+]
