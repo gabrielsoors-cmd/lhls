@@ -4,6 +4,7 @@ import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { entreprenadSlides } from "@/content/slides";
 import { services } from "@/content/services";
 import { buildMetadata } from "@/lib/seo";
+import { mailtoSubject } from "@/lib/site";
 
 export const metadata = buildMetadata({
   title: "Entreprenad & Markarbeten i Älvdalen",
@@ -48,6 +49,12 @@ export default function Entreprenad() {
                   {s.title}
                 </h2>
                 <p className="mt-6 max-w-md text-lg leading-relaxed text-steel">{s.text}</p>
+                <a
+                  href={mailtoSubject(s.title)}
+                  className="mt-8 inline-flex items-center gap-3 border border-ink px-6 py-4 text-sm font-medium transition-colors hover:bg-ink hover:text-paper"
+                >
+                  Be om offert <span aria-hidden="true">→</span>
+                </a>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-3 md:col-span-7 md:gap-4">

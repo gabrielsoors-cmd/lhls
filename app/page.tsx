@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { ContactBand, Pic } from "@/components/Sections";
 import { services } from "@/content/services";
 import { Reviews } from "@/components/Reviews";
+import { StickyCta } from "@/components/StickyCta";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -148,6 +149,7 @@ export default function Home() {
       </section>
 
       <Reviews />
+      <StickyCta />
 
       <ContactBand />
     </>

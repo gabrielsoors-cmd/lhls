@@ -83,6 +83,12 @@ export const nav = [
 export const mailtoTo = (email: string) =>
   `mailto:${email}?subject=${encodeURIComponent("Förfrågan via lhls.se")}`;
 
+/** Mejl med eget ämne, t.ex. "Förfrågan: Flyttstädning". */
+export const mailtoSubject = (subject: string) =>
+  `mailto:${site.email}?subject=${encodeURIComponent(`Förfrågan: ${subject}`)}&body=${encodeURIComponent(
+    `Hej!\n\nJag vill gärna veta mer om: ${subject}.\n\nVar ligger jobbet:\nÖnskad tidpunkt:\n\nMitt namn och telefonnummer:\n`,
+  )}`;
+
 export const mailtoProject = `mailto:${site.email}?subject=${encodeURIComponent(
   "Förfrågan via lhls.se",
 )}&body=${encodeURIComponent(

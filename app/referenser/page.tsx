@@ -1,5 +1,6 @@
 import { ContactBand, PageHeader, Pic } from "@/components/Sections";
 import { buildMetadata } from "@/lib/seo";
+import { mailtoSubject } from "@/lib/site";
 
 export const metadata = buildMetadata({
   title: "Referenser – större markuppdrag",
@@ -45,6 +46,12 @@ export default function Referenser() {
               <p className="eyebrow text-steel">{String(i + 1).padStart(2, "0")}</p>
               <h2 className="display mt-5 text-3xl md:text-5xl">{r.title}</h2>
               <p className="mt-6 max-w-md text-lg leading-relaxed text-steel">{r.text}</p>
+              <a
+                href={mailtoSubject(`Liknande uppdrag som ${r.title}`)}
+                className="mt-8 inline-flex items-center gap-3 border-b border-ink pb-1 text-sm font-medium hover:opacity-60"
+              >
+                Fråga om liknande uppdrag <span aria-hidden="true">→</span>
+              </a>
             </div>
             {r.images.length > 0 && (
               <div className="grid grid-cols-2 gap-3 md:col-span-7 md:gap-4">
