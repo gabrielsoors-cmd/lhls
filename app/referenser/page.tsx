@@ -9,7 +9,12 @@ export const metadata = buildMetadata({
   path: "/referenser/",
 });
 
-const references = [
+const references: {
+  title: string;
+  text: string;
+  images: string[];
+  captions?: string[];
+}[] = [
   {
     title: "Snökanonledning, 7 km",
     text: "Sju kilometer ledningsgrav i skogsterräng, med rör, kablar och kopplingar.",
@@ -23,7 +28,8 @@ const references = [
   {
     title: "Älvrestaurering i Älvdalen",
     text: "I samarbete med Länsstyrelsen fick vi möjlighet att restaurera älven i Älvdalen. Ett mycket intressant projekt där resultatet talar för sig själv.",
-    images: [],
+    images: ["/images/mark-alv-fore.jpg", "/images/mark-alv-efter.jpg"],
+    captions: ["Före", "Efter"],
   },
 ];
 
@@ -56,12 +62,18 @@ export default function Referenser() {
             {r.images.length > 0 && (
               <div className="grid grid-cols-2 gap-3 md:col-span-7 md:gap-4">
                 {r.images.map((src, j) => (
-                  <Pic
-                    key={src}
-                    src={src}
-                    sizes="(min-width:768px) 29vw, 50vw"
-                    className={`aspect-[4/5] ${r.images.length === 3 && j === 0 ? "col-span-2 aspect-[4/3]" : ""}`}
-                  />
+                  <div key={src} className={`relative ${r.images.length === 3 && j === 0 ? "col-span-2" : ""}`}>
+                    <Pic
+                      src={src}
+                      sizes="(min-width:768px) 29vw, 50vw"
+                      className={`aspect-[4/5] ${r.images.length === 3 && j === 0 ? "aspect-[4/3]" : ""}`}
+                    />
+                    {r.captions?.[j] && (
+                      <span className="eyebrow absolute left-0 top-0 bg-ink px-3 py-2 text-paper">
+                        {r.captions[j]}
+                      </span>
+                    )}
+                  </div>
                 ))}
               </div>
             )}

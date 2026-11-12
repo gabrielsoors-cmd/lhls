@@ -34,3 +34,9 @@ Start (hero + val + maskinförare-sektion) · Entreprenad (bildspel + 6 tjänste
 - Mobil: hero och Entreprenad-header växer med innehållet (min-h-svh) i stället för att klippas.
 - Delningsbild: statisk public/og.jpg används av alla sidor via buildMetadata; 404 är noindex.
 - Unika titlar och beskrivningar per sida.
+
+## Feedback från Linus (12 nov)
+- Finplanering: ny bild (2141) i stället för marksten i sättsand.
+- VA flyttad till plats 3 (efter Husgrunder); oljeavskiljare (7815) och djup grop (4672) som bilder.
+- Projekt-galleriet: grävmaskin som lyfter betongelement (2547) ersätter 1917.
+- Referenser: Älvrestaurering har nu Före/Efter-bilder.

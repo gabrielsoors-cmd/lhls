@@ -19,7 +19,7 @@ export const services: Service[] = [
     text: "Återställning och förbättring av din gård, med allt från planering av ytor, jämn och fin gräsmatta och planteringar till stentrappor, stenläggning, L-stöd och asfaltsjusteringar.",
     images: [
       "/images/finplanering-2829.jpg",
-      "/images/finplanering-1958.jpg",
+      "/images/finplanering-2141.jpg",
       "/images/finplanering-1959.jpg",
       "/images/finplanering-2623.jpg",
     ],
@@ -34,6 +34,17 @@ export const services: Service[] = [
       "/images/grunder-4257.jpg",
       "/images/grunder-2367.jpg",
       "/images/grunder-7933.jpg",
+    ],
+  },
+  {
+    id: "va",
+    title: "Vatten & avlopp",
+    short: "Nya VA-stammar, ingrävning och vattenläckor.",
+    text: "Allt från nya VA-stammar till ingrävning av VA till din befintliga bostad. Vi hjälper dig även vid vattenläckor.",
+    images: [
+      "/images/va-2231.jpg",
+      "/images/va-7815.jpg",
+      "/images/va-4672.jpg",
     ],
   },
   {
@@ -70,18 +81,6 @@ export const services: Service[] = [
       "/images/vag-3137.jpg",
       "/images/vag-7028.jpg",
       "/images/vag-4225.jpg",
-    ],
-  },
-  {
-    id: "va",
-    title: "Vatten & avlopp",
-    short: "Nya VA-stammar, ingrävning och vattenläckor.",
-    text: "Allt från nya VA-stammar till ingrävning av VA till din befintliga bostad. Vi hjälper dig även vid vattenläckor.",
-    images: [
-      "/images/va-2231.jpg",
-      "/images/va-2405.jpg",
-      "/images/va-6457.jpg",
-      "/images/va-7815.jpg",
     ],
   },
 ];
