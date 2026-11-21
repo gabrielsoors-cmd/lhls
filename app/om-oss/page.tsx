@@ -68,7 +68,7 @@ export default function OmOss() {
                     width={800}
                     height={1000}
                     unoptimized
-                    className="mb-6 aspect-[4/5] w-full max-w-xs object-cover"
+                    className="mb-6 aspect-[4/5] w-full max-w-xs object-cover object-top"
                   />
                 )}
                 <p className="eyebrow text-steel">{p.role}</p>

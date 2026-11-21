@@ -58,7 +58,8 @@ export const people: Person[] = [
     responsibility: "Jobb, offerter och personal",
     phone: "079-358 54 55",
     phoneHref: "+46793585455",
-    email: "linus@lhls.se",
+    email: "info@lhls.se",
+    photo: "/people/linus.jpg",
   },
   {
     name: "Hampus",
@@ -67,7 +68,8 @@ export const people: Person[] = [
     responsibility: "Ekonomi och fakturafrågor",
     phone: "070-381 52 51",
     phoneHref: "+46703815251",
-    email: "hampus@lhls.se",
+    email: "info@lhls.se",
+    photo: "/people/hampus.jpg",
   },
 ];
 

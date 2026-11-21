@@ -18,7 +18,7 @@ Start (hero + val + maskinförare-sektion) · Entreprenad (bildspel + 6 tjänste
 5. DNS-flytt + `SITE_URL` + custom domain i Pages (se README).
 6. Linus/Hampus granskar texter (särskilt: "355 mm" PE-rör i Tandådalen, snökanonledning 7 km, Om oss-texten).
 7. Allmänna villkor och integritetspolicy är utkast: låt jurist/branschorganisation granska. Uppdatera policyn om analys/formulär tillkommer.
-8. Kontrollera att linus@lhls.se och hampus@lhls.se finns som brevlådor.
+8. Endast info@lhls.se används (beslut 21 nov); personliga alias är borttagna från sajten.
 9. Porträtt av Linus/Hampus: lägg filer i `public/people/` och sätt `photo` i `lib/site.ts`.
 10. Bilder till Lokalvård & Stugservice saknas ännu.
 11. SEO: startsidans titel är identisk med gamla sidans ("… | Lokal Grävmaskinist") för att behålla ranking.

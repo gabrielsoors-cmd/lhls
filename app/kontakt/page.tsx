@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { PageHeader } from "@/components/Sections";
 import { buildMetadata } from "@/lib/seo";
-import { asset, mailtoProject, mailtoTo, people, site } from "@/lib/site";
+import { asset, mailtoProject, people, site } from "@/lib/site";
 
 export const metadata = buildMetadata({
   title: "Kontakta oss – begär prisestimat",
@@ -33,7 +33,7 @@ export default function Kontakt() {
                       width={240}
                       height={300}
                       unoptimized
-                      className="h-32 w-24 shrink-0 object-cover"
+                      className="h-32 w-24 shrink-0 object-cover object-top"
                     />
                   )}
                   <div>
@@ -46,11 +46,6 @@ export default function Kontakt() {
                   <p>
                     <a href={`tel:${p.phoneHref}`} className="underline-offset-4 hover:underline">
                       {p.phone}
-                    </a>
-                  </p>
-                  <p>
-                    <a href={mailtoTo(p.email)} className="underline-offset-4 hover:underline">
-                      {p.email}
                     </a>
                   </p>
                 </div>
